@@ -3,6 +3,8 @@ import { Ref, TextareaHTMLAttributes, forwardRef } from "react";
 interface IProps extends TextareaHTMLAttributes<HTMLTextAreaElement> {}
 
 const Textarea = forwardRef(({ ...rest }: IProps, ref: Ref<HTMLTextAreaElement>) => {
+  console.log(`<Textarea /> rendered`);
+
   return (
     <textarea
       ref={ref}

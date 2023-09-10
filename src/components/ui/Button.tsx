@@ -38,6 +38,7 @@ interface ButtonProps extends HTMLAttributes<HTMLButtonElement>, VariantProps<ty
 }
 
 const Button = ({ type, variant, size, fullWidth, isLoading, className, children, ...props }: ButtonProps) => {
+  console.log(`<Button /> rendered`);
   return (
     <button
       type={type}

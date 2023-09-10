@@ -3,6 +3,8 @@ import { InputHTMLAttributes, Ref, forwardRef } from "react";
 interface IProps extends InputHTMLAttributes<HTMLInputElement> {}
 
 const Input = forwardRef(({ ...rest }: IProps, ref: Ref<HTMLInputElement>) => {
+  console.log(`<Input /> rendered`);
+
   return (
     <input
       ref={ref}
